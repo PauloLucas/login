@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="field">
+        <input placeholder="" type="text" id="username" name="username" required>
+        <label for="username">Usuário</label>
+      </div>
+
+      <div class="field">
+        <input id="campo" placeholder="" type="password" id="password" name="password" required>
+        <label for="password">Senha</label>
+      </div>
+
+
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="social-login">
+      <button class="custom-google-signin" onclick="onSignInCustom()">
+        <!-- <img src="https://cdn-icons-png.flaticon.com/256/2875/2875404.png" alt="icone do google"> -->
+        Login com Google
+      </button>
+
+      <!-- Botão de login do Google Sign-In padrão -->
+      <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <!--  -->
+  <!-- <div class="field">
+    <input type="text" id="username" placeholder="" />
+    <label for="username">Username</label>
+  </div> -->
+
+  <!--  -->
+</body>
+
+</html>

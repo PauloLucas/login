@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-color: #f4f4f4; */
+  background: linear-gradient(to right, #ff9900, #ff3366);
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.login-container {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  /* background-color: #fff; */
+
+  background: rgba(255, 255, 255, 0.5); /* Cor de fundo com transparência */
+  backdrop-filter: blur(10px); /* Efeito de blur */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.5); /* Cor de fundo com transparência */
+  backdrop-filter: blur(10px); /* Efeito de blur */
+}
+
+input:focus {
+  backdrop-filter: blur(10px); /* Efeito de blur */
+  outline: none;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 200ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+.g-signin2 {
+  display: inline-block;
+  background-color: #4285f4; /* Cor de fundo do Google Sign-In */
+  color: #fff; /* Cor do texto */
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.g-signin2:hover {
+  background-color: #3e78f8; /* Cor de fundo ao passar o mouse */
+}
+
+.custom-google-signin {
+  background-color: #4285f4;
+}
+
+.custom-google-signin:hover {
+  background-color: #3e78f8;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  */
+.field {
+  position: relative;
+}
+
+.field input {
+  /* color: #565656; */
+  background: none;
+  padding: 0.625rem;
+  /* border: 2px solid #030104; */
+}
+
+.field label {
+  font-size: small;
+  position: absolute;
+  top: 0;
+  left: 0;
+  translate: 0.625 rem 0.625rem;
+  color: #555;
+  /* background-color: #efe4f7; */
+  padding-top: 0.75rem;
+  padding-inline: 0.25rem;
+  border: 2px solid transparent;
+  pointer-events: none;
+  transition: translate 250ms, background-color 250ms, border-color 250ms;
+}
+
+.field:focus-within label,
+.field:not(:has(:placeholder-shown)) label {
+  translate: 0rem -1.65rem;
+  color: #030104;
+}
+.field:focus-within {
+  /* background-color: red; */
+  /* border-bottom: 5px solid greenyellow; */
+}
